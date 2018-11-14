@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/azul_fondo</item>
+        <item name="colorPrimaryDark">@color/azul_encabezado</item>
+        <item name="colorAccent">@color/blanco</item>
+        <item name="android:fontFamily">@font/armata</item>
+    </style>
+
+    <style name="EditText">
+        <item name="colorControlNormal">@color/blanco</item>
+        <item name="colorControlActivated">@color/blanco</item>
+        <item name="colorControlHighlight">@color/blanco</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textColorHint">@color/blanco</item>
+    </style>
+
+</resources>
