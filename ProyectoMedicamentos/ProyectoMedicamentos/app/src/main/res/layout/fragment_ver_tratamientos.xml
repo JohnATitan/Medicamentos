@@ -4,16 +4,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/azul_fondo"
-    tools:context=".fragments.VerTratamientosFragment">
+    tools:context=".ui.fragments.VerTratamientosFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/vpVerTratamientos"
+        <RelativeLayout
+            android:id="@+id/relative1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/azul_encabezado">
 
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text="Tratamiento"
+                android:textColor="@color/blanco"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlAccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/ivAccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlCerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relative1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpVerTratamientos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
 </FrameLayout>

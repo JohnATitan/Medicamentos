@@ -6,6 +6,27 @@
 
     <color name="azul_fondo">#3D6FD9</color>
     <color name="azul_encabezado">#0C3DA5</color>
+    <color name="azul_texto">#8BAAEC</color>
+
+    <color name="azul_item">#23879E</color>
 
     <color name="blanco">#ffffff</color>
+
+
+    <color name="agua">#2AD2CC</color>
+
+
+    <color name="naranja_encabezado">#F7A300</color>
+    <color name="naranja_fondo">#FFBA33</color>
+
+    <color name="naranja_fondo_item">#ffc75a</color>
+
+
+    <color name="negro">#000000</color>
+
+    <color name="gris0">#D3D1C6</color>
+    <color name="gris1">#C3BFAE</color>
+    <color name="gris2">#AFAA93</color>
+
+
 </resources>

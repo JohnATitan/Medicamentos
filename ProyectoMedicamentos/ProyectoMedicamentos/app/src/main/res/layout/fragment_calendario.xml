@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CalendarioFragment">
+    tools:context=".ui.fragments.CalendarioFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,16 +27,33 @@
 
         </RelativeLayout>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMedicamentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTratamiento"
+            android:layout_centerHorizontal="true" />
 
         <RelativeLayout
+            android:id="@+id/rvCalendario"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/relative1">
+            android:layout_below="@id/rvMedicamentos">
 
-            <CalendarView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
+            <!--<com.applandeo.materialcalendarview.CalendarView-->
+                <!--android:id="@+id/calendario"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--app:selectionColor="@color/agua"-->
+                <!--app:todayLabelColor="@color/colorAccent"-->
+                <!--app:type="range_picker" />-->
         </RelativeLayout>
 
 
