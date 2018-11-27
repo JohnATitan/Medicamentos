@@ -20,18 +20,16 @@ import android.widget.RelativeLayout;
 
 import com.applandeo.materialcalendarview.CalendarUtils;
 import com.applandeo.materialcalendarview.CalendarView;
-import com.applandeo.materialcalendarview.exceptions.OutOfDateRangeException;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 public class CalendarioFragment extends Fragment implements CalendarioTratamientoListener, CalendarioMedicamentoListener {
 
     private MenuPrincipalListener listener;
-//    private CalendarView calendario;
-    private RelativeLayout rvCalendario;
+    private CalendarView calendario;
+//    private RelativeLayout rvCalendario;
     private RecyclerView rvTratamiento, rvMedicamentos;
     private ItemCalendarioMedicamentoAdapter adapter;
 
@@ -64,8 +62,8 @@ public class CalendarioFragment extends Fragment implements CalendarioTratamient
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_calendario, container, false);
 
-        rvCalendario = root.findViewById(R.id.rvCalendario);
-//        calendario = root.findViewById(R.id.calendario);
+//        rvCalendario = root.findViewById(R.id.rvCalendario);
+        calendario = root.findViewById(R.id.calendario);
         rvTratamiento = root.findViewById(R.id.rvTratamiento);
         rvMedicamentos = root.findViewById(R.id.rvMedicamentos);
 
@@ -97,8 +95,6 @@ public class CalendarioFragment extends Fragment implements CalendarioTratamient
     @Override
     public void seleccionarDiasMedicamento(int numeroDias) {
 
-        rvCalendario.removeAllViews();
-        
         Calendar dia1 = Calendar.getInstance();
         Calendar dia2 = Calendar.getInstance();
 

@@ -46,14 +46,14 @@
             android:layout_height="match_parent"
             android:layout_below="@id/rvMedicamentos">
 
-            <!--<com.applandeo.materialcalendarview.CalendarView-->
-                <!--android:id="@+id/calendario"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_centerInParent="true"-->
-                <!--app:selectionColor="@color/agua"-->
-                <!--app:todayLabelColor="@color/colorAccent"-->
-                <!--app:type="range_picker" />-->
+            <com.applandeo.materialcalendarview.CalendarView
+                android:id="@+id/calendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:selectionColor="@color/agua"
+                app:todayLabelColor="@color/colorAccent"
+                app:type="range_picker" />
         </RelativeLayout>
 
 
